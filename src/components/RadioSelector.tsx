@@ -5,6 +5,7 @@ import EthereumForm from './EthereumForm';
 import ExchangeForm from './ExchangeForm';
 import LocalFileForm from './LocalFileForm';
 
+
 interface RadioSelectorState{
   selectedRadio: string;
 }
@@ -51,11 +52,12 @@ class RadioSelector extends React.Component<any, RadioSelectorState> {
                   </label>
                 </div>
               </form>
+              <button className="bg-primary">Hello</button>
             </div>
             <div className="col-md-6">
               {this.RadioControl()}
-            </div>  
-          </div>
+            </div> 
+          </div>             
         </div>
       </div>
     );
