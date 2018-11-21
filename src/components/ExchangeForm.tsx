@@ -4,42 +4,42 @@ class ExchangeForm extends React.Component {
   
   public render() {
     return (
-      <div className="ExchangeForm">
+      <div className="form-active">
         <div className="container">
           <form>
             <div>
-              <label>
+              <label className="form-label">
                 Exchange Name
               </label>
               <br />     
-              <select>
+              <select className="input-boxes">
                 <option selected value="Zoe">Zoe</option>
                 <option value="Millie">Millie</option>
                 <option value="Norah">Norah</option>
               </select>
             </div>
             <div>    
-              <label>
+              <label className="form-label">
                 Public API Key
               </label>
               <br /> 
-              <input type="text" required/>
+              <input className="input-boxes" type="text" required/>
             </div> 
             <div>    
-              <label>
+              <label className="form-label">
                 Private API
               </label>
               <br /> 
-              <input type="text" required/>
+              <input className="input-boxes" type="text" required/>
             </div> 
             <div>     
-              <label>
+              <label className="form-label">
                 Account Nickname
               </label>
               <br /> 
-              <input type="text"/>
+              <input className="input-boxes" type="text"/>
             </div>  
-              <input type="submit" value="Connect Exchange" />
+              <input className="input-buttons" type="submit" value="Connect Exchange" />
           </form>
         </div>
       </div>

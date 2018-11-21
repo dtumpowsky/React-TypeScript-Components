@@ -28,29 +28,29 @@ class EthereumForm extends React.Component<any, CounterState> {
   
   public render() {
     return (
-      <div className="EthereumForm">
+      <div className="form-active">
         <div className="container">
           <form>
             <div>    
-              <label>
+              <label className="form-label">
                 Public Address
               </label>
               <br /> 
               <input 
-                id="ethereum-address" 
+                className="input-boxes"
                 type="text" 
                 onChange={this.handleCountChange} 
                 required/>
             </div> 
               {this.inputChecker()}
             <div>     
-              <label>
+              <label className="form-label">
                 Account Nickname
               </label>
               <br /> 
-              <input type="text"/>
-            </div>  
-              <input type="submit" value="Add Address"/>
+              <input className="input-boxes" type="text"/>
+            </div> 
+              <input className="input-buttons" type="submit" value="Add Address"/>
           </form>
         </div>
       </div>

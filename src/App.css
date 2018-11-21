@@ -1,10 +1,7 @@
 .App {
   text-align: left;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  font-family: Optima, sans-serif;
+  font-size: 14px;
 }
 
 .App-header {
@@ -14,15 +11,68 @@
 }
 
 .App-title {
+  margin-top: 40px;
   font-size: 1.5em;
   color: black;
 }
 
 .App-intro {
   font-size: large;
+  margin-left: 5%;
+  color: #522184;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-intro-2 {
+  color: #522184;
+}
+
+.form-label{
+  font-weight: normal !important;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+ 
+.input-boxes {
+  width: 400px;
+}
+
+.input-buttons {
+  width: 400px;
+  height: 40px;
+  margin-top: 30px;
+  color: white;
+  background-color: #6F42C1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.radio {
+  margin-left: -170%;
+  padding: 7px;
+}
+
+.radio-column-2 {
+  margin-left: -54%;
+}
+
+.question-mark {
+  height: 22px;
+  font-weight: normal;
+  margin-top: -5px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.App-intro-details {
+  opacity: .5;
+  color: black;
+  font-size: large;
+  margin-left: 5%;
+}
+
+.numbered-title {
+  padding-left: 5px;
+}
+
+.checkbox-radio [type="radio"]:enabled {
+  color: #6F42C1 !important;
 }

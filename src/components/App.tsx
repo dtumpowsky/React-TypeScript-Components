@@ -1,9 +1,8 @@
 import * as React from 'react';
 import '../App.css';
-import logo from '../logo.svg';
 import RadioSelector from './RadioSelector';
-// import ExchangeForm from './ExchangeForm';
-// import LocalFileForm from './LocalFileForm';
+import SelectAccountHeader from './SelectAccountHeader';
+
 
 class App extends React.Component {
 
@@ -11,15 +10,20 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Add New Account</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
-      <RadioSelector />
-      {/* <ExchangeForm /> */}
-      {/* <LocalFileForm /> */}
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4">
+              <SelectAccountHeader />
+            </div>  
+            <div className="col-md-8">
+              <div className="radio-row">
+                <RadioSelector />
+              </div>
+            </div>
+          </div> 
+        </div>     
       </div>
     );
   }

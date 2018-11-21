@@ -4,11 +4,11 @@ class LocalFileForm extends React.Component {
   
   public render() {
     return (
-      <div className="ExchangeForm">
+      <div className="form-active">
         <div className="container">
           <form>
             <div>
-              <label>
+              <label className="form-label">
                 Exchange Name
               </label>
               <br />    
@@ -19,20 +19,20 @@ class LocalFileForm extends React.Component {
               </select>
             </div>
             <div>
-              <label>
+              <label className="form-label">
                File
               </label>
             <br />
               <input type="file" required/>
             </div> 
             <div>     
-              <label>
+              <label className="form-label">
                 Account Nickname
               </label>
               <br />
-              <input type="text"/>
+              <input className="input-boxes" type="text"/>
             </div>  
-            <button type="submit">Upload File</button>
+            <button className="input-buttons" type="submit">Upload File</button>
           </form>
         </div>
       </div>
