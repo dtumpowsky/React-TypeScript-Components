@@ -1,7 +1,8 @@
 import * as React from 'react';
 
+
 interface CounterState{
-  count: number;
+  characters: string;
 }
 
 class EthereumForm extends React.Component<any, CounterState> {
@@ -9,24 +10,23 @@ class EthereumForm extends React.Component<any, CounterState> {
   constructor(props: any) {
     super(props);
     this.state = {
-      count: 0,
+      characters: ''
     }
-    this.handleCountChange = this.handleCountChange.bind(this);
-    this.handleStateReset = this.handleStateReset.bind(this);
+    this.handleCharacterChange = this.handleCharacterChange.bind(this);
   }
   
-  public handleCountChange(characters: any) {
+  //force 4 character limit
+  public handleCharacterChange(e: any) {
+    e.preventDefault();
     this.setState({
-      count: this.state.count + 1
-    })
-  }
-  public handleStateReset(characters: any) {
-    this.setState({
-      count: 0
+      characters: e.target.value.substring(0,4)
     })
   }
   
   public render() {
+    
+    const enable = this.isFormValid();
+    
     return (
       <div className="form-active">
         <div className="container">
@@ -37,12 +37,13 @@ class EthereumForm extends React.Component<any, CounterState> {
               </label>
               <br /> 
               <input 
-                className="input-boxes"
-                type="text" 
-                onChange={this.handleCountChange} 
+                className={!enable ? "error" : "input-boxes"}
+                type="string"
+                value={this.state.characters} 
+                onChange={this.handleCharacterChange}
                 required/>
             </div> 
-              {this.inputChecker()}
+      
             <div>     
               <label className="form-label">
                 Account Nickname
@@ -50,23 +51,21 @@ class EthereumForm extends React.Component<any, CounterState> {
               <br /> 
               <input className="input-boxes" type="text"/>
             </div> 
-              <input className="input-buttons" type="submit" value="Add Address"/>
+              <input className="input-buttons" type="submit" disabled={!enable} value="Add Address"/>
           </form>
         </div>
       </div>
     );
   }
-
-  // TODO: Hacky
-  public inputChecker() {
-    const counter = this.state.count;
-    
-    if (counter > 4){
-      alert('Invalid Entry: Address must be 4 characters');
+  
+  public isFormValid(){
+    if(this.state.characters.length == 4){
+      return true;
+    } else if (this.state.characters.length == 0) {
+      return true;
     }
+    return false;
   }
-  
-  
 }
 
 export default EthereumForm;

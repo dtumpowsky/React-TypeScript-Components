@@ -70,9 +70,15 @@
 }
 
 .numbered-title {
-  padding-left: 5px;
+  padding-left: 20px;
 }
 
 .checkbox-radio [type="radio"]:enabled {
   color: #6F42C1 !important;
+}
+
+.error {
+  outline: 2px solid red;
+  width: 400px;
+  box-shadow: .5px .5px .7px .7px red;
 }
