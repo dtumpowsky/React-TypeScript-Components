@@ -16,7 +16,8 @@ _TypeScript/React components including the following functionality_
 * runs on localhost:3000
 
 ##### Known Bugs
-_Buttons return you to home page by default, not through router... will need to learn more about react-router with TypeScript... can impliment with more time_
+* Buttons return you to home page by default, not through router - will need to learn more about react-router with TypeScript - can impliment with more time
+* Not yet built for mobile
 
 #### Support and contact details
 ### David Tumpowsky_
