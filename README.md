@@ -20,7 +20,6 @@ _TypeScript/React components including the following functionality_
 * Not yet built for mobile
 
 #### Support and contact details
-### David Tumpowsky_
-# email: tumpowskydavid@gmail.com
+##### email: tumpowskydavid@gmail.com
 
 ####
