@@ -37,6 +37,7 @@ class EthereumForm extends React.Component<any, CounterState> {
               </label>
               <br /> 
               <input 
+                //determines class based on whether character length is valid
                 className={!enable ? "error" : "input-boxes"}
                 type="string"
                 value={this.state.characters} 
@@ -51,7 +52,7 @@ class EthereumForm extends React.Component<any, CounterState> {
               <br /> 
               <input className="input-boxes" type="text"/>
             </div> 
-              <input className="input-buttons" type="submit" disabled={!enable} value="Add Address"/>
+              <button className="input-buttons" type="submit" disabled={!enable} value="Add Address"/>
           </form>
         </div>
       </div>

@@ -33,11 +33,11 @@
 }
  
 .input-boxes {
-  width: 400px;
+  width: 73%;
 }
 
 .input-buttons {
-  width: 400px;
+  width: 73%;
   height: 40px;
   margin-top: 30px;
   color: white;
@@ -79,6 +79,6 @@
 
 .error {
   outline: 2px solid red;
-  width: 400px;
+  width: 73%;
   box-shadow: .5px .5px .7px .7px red;
 }

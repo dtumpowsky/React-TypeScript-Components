@@ -22,6 +22,7 @@ class RadioSelector extends React.Component<any, RadioSelectorState> {
     this.handleRadioChange = this.handleRadioChange.bind(this);
   }
   
+  //checks the state of which radio button is selected
   public handleRadioChange(changeEvent: any) {
     this.setState({
       selectedRadio: changeEvent.target.value
@@ -81,6 +82,10 @@ class RadioSelector extends React.Component<any, RadioSelectorState> {
     );
   }
   
+  
+  //TODO Combine logic to fit DRY conventions
+  
+  //renders form dependent on radio selection
   public radioControl() {
   const selectedRadio = this.state.selectedRadio;
     if (selectedRadio === 'option1') {
@@ -93,6 +98,7 @@ class RadioSelector extends React.Component<any, RadioSelectorState> {
     return null;
   }
   
+  //renders header dependent on radio selection
   public headerControl() {
   const selectedRadio = this.state.selectedRadio;
     if (selectedRadio === 'option1') {
@@ -105,9 +111,6 @@ class RadioSelector extends React.Component<any, RadioSelectorState> {
     return <DefaultFormHeader />;
   }
 }
-
-
-
 
 
 export default RadioSelector;

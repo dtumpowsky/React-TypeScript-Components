@@ -1,6 +1,7 @@
 import * as React from 'react';
 import question from '../question-mark.png';
 
+
 class EthereumHeader extends React.Component {
 
   public render() {
