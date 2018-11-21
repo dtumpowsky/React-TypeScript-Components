@@ -40,7 +40,7 @@ class ExchangeForm extends React.Component {
               <br /> 
               <input className="input-boxes" type="text"/>
             </div>  
-              <input className="input-buttons" type="submit" value="Connect Exchange" />
+              <button className="input-buttons" type="submit">Connect Exchange</button>
           </form>
         </div>
       </div>

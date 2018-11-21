@@ -43,8 +43,7 @@ class EthereumForm extends React.Component<any, CounterState> {
                 value={this.state.characters} 
                 onChange={this.handleCharacterChange}
                 required/>
-            </div> 
-      
+            </div>       
             <div>     
               <label className="form-label">
                 Account Nickname
@@ -52,7 +51,9 @@ class EthereumForm extends React.Component<any, CounterState> {
               <br /> 
               <input className="input-boxes" type="text"/>
             </div> 
-              <button className="input-buttons" type="submit" disabled={!enable} value="Add Address"/>
+              <button className="input-buttons" type="submit" disabled={!enable}>
+                Add Address
+              </button>
           </form>
         </div>
       </div>
