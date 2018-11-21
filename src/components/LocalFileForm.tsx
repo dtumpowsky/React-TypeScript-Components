@@ -16,7 +16,6 @@ class LocalFileForm extends React.Component {
                 <option selected value="Zoe">Zoe</option>
                 <option value="Millie">Millie</option>
                 <option value="Norah">Norah</option>
-                <option value="Edi">Edi</option>
               </select>
             </div>
             <div>
@@ -24,7 +23,7 @@ class LocalFileForm extends React.Component {
                File
               </label>
             <br />
-              <input type="file"/>
+              <input type="file" required/>
             </div> 
             <div>     
               <label>

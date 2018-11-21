@@ -10,30 +10,33 @@ class ExchangeForm extends React.Component {
             <div>
               <label>
                 Exchange Name
-              </label>    
+              </label>
+              <br />     
               <select>
                 <option selected value="Zoe">Zoe</option>
                 <option value="Millie">Millie</option>
                 <option value="Norah">Norah</option>
-                <option value="Edi">Edi</option>
               </select>
             </div>
             <div>    
               <label>
                 Public API Key
               </label>
-              <input type="text"/>
+              <br /> 
+              <input type="text" required/>
             </div> 
             <div>    
               <label>
                 Private API
               </label>
-              <input type="text"/>
+              <br /> 
+              <input type="text" required/>
             </div> 
             <div>     
               <label>
                 Account Nickname
               </label>
+              <br /> 
               <input type="text"/>
             </div>  
               <input type="submit" value="Connect Exchange" />

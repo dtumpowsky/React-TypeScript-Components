@@ -36,26 +36,26 @@ class RadioSelector extends React.Component<any, RadioSelectorState> {
                 <div className="radio">
                   <label>
                     <input type="radio" value="option1" checked={this.state.selectedRadio === 'option1'} onChange={this.handleRadioChange}/>
-                    Option 1
+                    Exchange
                   </label>
                 </div>
                 <div className="radio">
                   <label>
                     <input type="radio" value="option2" checked={this.state.selectedRadio === 'option2'} onChange={this.handleRadioChange}/>
-                    Option 2
+                    Ethereum Address
                   </label>
                 </div>
                 <div className="radio">
                   <label>
                     <input type="radio" value="option3" checked={this.state.selectedRadio === 'option3'} onChange={this.handleRadioChange}/>
-                    Option 3
+                    LocalFile
                   </label>
                 </div>
               </form>
-              <button className="bg-primary">Hello</button>
+              <button className="btn btn-success">Hello</button>
             </div>
             <div className="col-md-6">
-              {this.RadioControl()}
+              {this.radioControl()}
             </div> 
           </div>             
         </div>
@@ -63,7 +63,7 @@ class RadioSelector extends React.Component<any, RadioSelectorState> {
     );
   }
   
-  public RadioControl() {
+  public radioControl() {
     const selectedRadio = this.state.selectedRadio;
     if (selectedRadio === 'option1') {
       return <ExchangeForm />;
